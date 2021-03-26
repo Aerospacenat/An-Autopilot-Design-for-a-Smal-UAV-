@@ -47,10 +47,13 @@ void PIDv2() {
 
 int calculatePID(int _axis, int _angel) {
   
-  int x_kp = 1, x_ki = 1, x_kd = 2; //values for PID X axis
-  int y_kp = 1, y_ki = 1, y_kd = 2; //values for PID Y axis
-  int z_kp = 1, z_ki = 0, z_kd = 0; //values for PID Z axis
-  int notZ_out, notY_out, notX_out;
+  //int x_kp = 1, x_ki = 1, x_kd = 2; //values for PID X axis
+  //int y_kp = 1, y_ki = 1, y_kd = 2; //values for PID Y axis
+  //int z_kp = 1, z_ki = 0, z_kd = 0; //values for PID Z axis
+  float x_kp = 1.3, x_ki = 0.04, x_kd = 18.0; //values for PID X axis
+  float y_kp = 1.3, y_ki = 0.04, y_kd = 18.0; //values for PID Y axis
+  float z_kp = 4.0, z_ki = 0.02, z_kd = 0.0; //values for PID Z axis
+  float  notZ_out, notY_out, notX_out;
 
   // X AXIS
   if (_axis == 0) {
