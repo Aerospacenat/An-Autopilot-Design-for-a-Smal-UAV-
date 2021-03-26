@@ -39,12 +39,12 @@ bool LDGNDR; // Landing Ground Reached
 String data; // data from the PI Pico
 String lastData; // last data from Pi Pico
 ////////////////////////////////////////////////////
-int accelX;
-int accelY;
-int accelZ;
-int gyroX;
-int gyroY;
-int gyroZ;
+long accelX;
+long accelY;
+long accelZ;
+long gyroX;
+long gyroY;
+long gyroZ;
 
 ////////lidar//////////////////////////////////////
 bool LidarOB; // ;Lidar Object
@@ -105,10 +105,10 @@ int x_input, x_lastinput = 0, x_setpoint = 0;
 int x_error, x_errorsum = 0, x_d_error, x_lasterror;
 
 int max_pid = 150;
-//////////////////////////Axis PID//////////////
+//////////////////////////Axis PID//////////////to be found in PID CLASS
 //double x_kp = 1, x_ki = 0.5, x_kd = 1; //values for PID X axis
 //double y_kp = 1, y_ki = 0.5, y_kd = 1; //values for PID Y axis
-//int z_kp = 1, z_ki = 0.0001, z_kd = 0.0001; //values for PID Z axis
+//double z_kp = 1, z_ki = 0.0001, z_kd = 0.0001; //values for PID Z axis
 ////////////////////////////////////////////
 
 
